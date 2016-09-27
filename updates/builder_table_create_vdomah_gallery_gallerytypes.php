@@ -14,6 +14,7 @@ class BuilderTableCreateVdomahGalleryGallerytypes extends Migration
             $table->string('name', 255);
             $table->string('slug', 255);
         });
+
         Schema::table('vdomah_gallery_galleries', function($table)
         {
             $table->integer('type_id')->unsigned();
@@ -23,6 +24,7 @@ class BuilderTableCreateVdomahGalleryGallerytypes extends Migration
     public function down()
     {
         Schema::dropIfExists('vdomah_gallery_gallerytypes');
+
         Schema::table('vdomah_gallery_galleries', function($table)
         {
             $table->dropColumn('type_id');
