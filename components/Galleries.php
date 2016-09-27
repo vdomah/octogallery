@@ -24,7 +24,7 @@ class Galleries extends ComponentBase
                 'title'       => 'vdomah.gallery::lang.components.type',
                 'description' => 'vdomah.gallery::lang.components.type_description',
                 'type'        => 'dropdown',
-                'default'     => '1',
+                'default'     => '0',
             ],
         ];
     }
@@ -36,7 +36,13 @@ class Galleries extends ComponentBase
 
     public function prepareVars()
     {
-        $this->galleries = $this->page['galleries'] = GalleryModel::active()->where('type_id', $this->property('type'))->get();
+        $query = GalleryModel::active();
+
+        if ($this->property('type') > 0) {
+            $query = $query->where('type_id', $this->property('type'));
+        }
+
+        $this->galleries = $this->page['galleries'] = $query->get();
     }
 
     public function onRun()

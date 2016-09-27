@@ -12,5 +12,14 @@
             'name' => 'Galleries List',
             'description' => 'Galleries List',
         ],
+        'type' => 'Type',
+        'type_description' => 'Type Description',
+    ],
+    'fields' => [
+        'name' => 'Name',
+        'slug' => 'Slug',
+        'status' => 'Status',
+        'type' => 'Type',
+        'images' => 'Images',
     ],
 ];

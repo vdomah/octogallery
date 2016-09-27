@@ -20,12 +20,7 @@ fields:
     images:
         label: 'vdomah.gallery::lang.fields.images'
         span: left
-        type: mlfileupload
-        attributes:
-            title: text
-            description: textarea
-            title_uk: text
-            description_uk: textarea
+        type: fileupload
     status:
         label: 'vdomah.gallery::lang.fields.status'
         span: left

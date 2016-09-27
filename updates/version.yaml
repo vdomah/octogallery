@@ -3,3 +3,9 @@
 1.0.2:
     - 'Created table vdomah_gallery_galleries'
     - builder_table_create_vdomah_gallery_galleries.php
+1.0.3:
+    - 'Created table vdomah_gallery_gallerytypes'
+    - builder_table_create_vdomah_gallery_gallerytypes.php
+1.0.4:
+    - 'Updated table vdomah_gallery_galleries'
+    - builder_table_update_vdomah_gallery_galleries.php
