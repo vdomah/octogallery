@@ -1,0 +1,11 @@
+list: $/vdomah/gallery/models/gallery/columns.yaml
+modelClass: Vdomah\Gallery\Models\Gallery
+title: Galleries
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'vdomah/gallery/galleries/update/:id'

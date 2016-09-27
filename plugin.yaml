@@ -1,0 +1,11 @@
+plugin:
+    name: 'vdomah.gallery::lang.plugin.name'
+    description: 'vdomah.gallery::lang.plugin.description'
+    author: Vdomah
+    icon: oc-icon-file-photo-o
+    homepage: ''
+navigation:
+    gallery:
+        label: Галереи
+        url: /vdomah/gallery/galleries
+        icon: icon-photo

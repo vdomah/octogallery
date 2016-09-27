@@ -1,0 +1,13 @@
+columns:
+    name:
+        label: 'vdomah.gallery::lang.fields.name'
+        type: text
+        searchable: true
+        sortable: true
+    type:
+        label: 'vdomah.gallery::lang.fields.type'
+        type: relation
+        searchable: true
+        sortable: true
+        select: name
+        relation: type

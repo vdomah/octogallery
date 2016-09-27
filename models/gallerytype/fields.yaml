@@ -1,0 +1,14 @@
+fields:
+    name:
+        label: 'vdomah.gallery::lang.fields.name'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+    slug:
+        label: 'vdomah.gallery::lang.fields.slug'
+        oc.commentPosition: ''
+        span: auto
+        preset:
+            field: name
+            type: slug
+        type: text

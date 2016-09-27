@@ -1,0 +1,4 @@
+title: Galleries
+modelClass: Vdomah\Gallery\Models\Gallery
+toolbar:
+    buttons: reorder_toolbar

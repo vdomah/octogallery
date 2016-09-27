@@ -1,0 +1,9 @@
+<figure class="slider__item">
+    <img class="lazyOwl" data-src="{{ gallery.images.first|mediathumb('crop', 400, 280) }}" 
+         src="{{ gallery.images.first|mediathumb('crop', 400, 200) }}" alt="" />
+    <figcaption class="slide__caption">
+        <p>{{ gallery.name }}</p>
+        <a href="/gallery/{{ gallery.slug }}"><h2>{{ gallery.name }}</h2></a>
+        <a class="slider__button" href="/gallery/{{ gallery.slug }}">{{ 'more'|_ }}</a>
+    </figcaption>
+</figure>

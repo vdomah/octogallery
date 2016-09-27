@@ -1,0 +1,19 @@
+<header class="post__header without-image">
+    <h1 class="post__title">{{ gallery.name }}</h1>
+</header>
+
+<div class="post__separator medium"></div>
+
+<div class="body_buttons"><a class="btn blue" href="{{ 'gallery'|page }}"><i class="fa fa-reply"></i>Back to galleries</a></div>
+
+{% for image in images %}
+    {% partial __SELF__~'::_item' image=image %}
+{% endfor %}
+
+<div class="body_buttons"><a class="btn blue" href="{{ 'gallery'|page }}"><i class="fa fa-reply"></i>Back to galleries</a></div>
+
+<div class="pagination">
+
+    {% partial 'paginator' paginator=images %}
+    <div class="clearfix"></div>
+</div>

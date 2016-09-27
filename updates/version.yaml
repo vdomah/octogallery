@@ -1,0 +1,5 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table vdomah_gallery_galleries'
+    - builder_table_create_vdomah_gallery_galleries.php

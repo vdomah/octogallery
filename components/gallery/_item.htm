@@ -1,0 +1,28 @@
+<div class="post__container image-{{ image.id }}">
+    <div class="post__gallery no-hidden">
+        <img class="lazyOwl" data-src="{{ image.path|mediathumb('height', 480) }}" src="{{ image.path|mediathumb('height', 480) }}" alt="" />
+    </div>
+    <h2 class="post__title post__title_uk">{{ image|attr_ml('title') }}</h2>
+    <h4 class="post__excerpt post__description post__description_uk" style="text-align: center">{{ image|attr_ml('description') }}</h4>
+    <div>
+        <label for="">Название англ:</label>
+        <input type="text" class="edit_attr" name="title" value="{{ image|attr_ml('title') }}" />
+    </div>
+    <div>
+        <label for="">Название укр:</label>
+        <input type="text" class="edit_attr" name="title_uk" value="{{ image|attr_ml('title_uk') }}" />
+    </div>
+    <div>
+        <label for="">Описание англ:</label>
+        <textarea class="edit_attr" name="description">{{ image|attr_ml('description') }}</textarea>
+    </div>
+    <div>
+        <label for="">Описание укр:</label>
+        <textarea class="edit_attr" name="description_uk">{{ image|attr_ml('description_uk') }}</textarea>
+    </div>
+    <button data-request="onUpdatePicData"
+            data-request-data="attrs: getPicAttrs({{ image.id }}), image_id: {{ image.id }}"
+            data-request-success="updatePicAttrs(data)"
+    >Сохранить</button>
+    <div class="post__separator"></div>
+</div>

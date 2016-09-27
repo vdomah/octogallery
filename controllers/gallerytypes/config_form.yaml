@@ -1,0 +1,10 @@
+name: Gallery types
+form: $/vdomah/gallery/models/gallerytype/fields.yaml
+modelClass: Vdomah\Gallery\Models\GalleryType
+defaultRedirect: vdomah/gallery/gallerytypes
+create:
+    redirect: 'vdomah/gallery/gallerytypes/update/:id'
+    redirectClose: vdomah/gallery/gallerytypes
+update:
+    redirect: vdomah/gallery/gallerytypes
+    redirectClose: vdomah/gallery/gallerytypes

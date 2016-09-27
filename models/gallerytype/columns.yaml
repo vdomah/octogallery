@@ -1,0 +1,6 @@
+columns:
+    name:
+        label: 'vdomah.gallery::lang.fields.name'
+        type: text
+        searchable: true
+        sortable: true

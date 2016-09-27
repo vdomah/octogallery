@@ -1,0 +1,33 @@
+fields:
+    name:
+        label: 'vdomah.gallery::lang.fields.name'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+    slug:
+        label: 'vdomah.gallery::lang.fields.slug'
+        oc.commentPosition: ''
+        span: auto
+        preset:
+            field: name
+            type: slug
+        type: text
+    type:
+        label: 'vdomah.gallery::lang.fields.type'
+        span: left
+        type: relation
+        relation: type
+    images:
+        label: 'vdomah.gallery::lang.fields.images'
+        span: left
+        type: mlfileupload
+        attributes:
+            title: text
+            description: textarea
+            title_uk: text
+            description_uk: textarea
+    status:
+        label: 'vdomah.gallery::lang.fields.status'
+        span: left
+        type: switch
+        default: 1
